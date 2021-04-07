@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">RetroWithMVVM</string>
+    <string name="login">LOG IN</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="userHint">Email ID</string>
+    <string name="pwdHint">Password</string>
+    <string name="userError">Please provide Username</string>
+    <string name="pwdError">Please provide at least 6 digit long Password</string>
+</resources>

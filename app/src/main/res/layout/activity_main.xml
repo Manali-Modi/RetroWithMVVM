@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/background">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginHorizontal="12dp"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:text="@string/login"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:textColor="@color/darkPink"
+                android:fontFamily="@font/login"
+                android:layout_marginBottom="24dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="@string/username"
+                android:textSize="18sp"
+                android:textColor="@color/pink"
+                android:fontFamily="@font/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/et_username"
+                android:hint="@string/userHint"
+                android:inputType="textEmailAddress"
+                android:padding="12dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/edit_text_bg"
+                android:fontFamily="@font/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="Autofill" />
+
+            <TextView
+                android:id="@+id/txt_user_error"
+                android:textColor="@color/red"
+                android:layout_marginStart="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginTop="16dp"
+                android:text="@string/password"
+                android:textSize="18sp"
+                android:textColor="@color/pink"
+                android:fontFamily="@font/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/et_pwd"
+                android:hint="@string/pwdHint"
+                android:inputType="textPassword"
+                android:padding="12dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/edit_text_bg"
+                android:fontFamily="@font/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="Autofill" />
+
+            <TextView
+                android:id="@+id/txt_pwd_error"
+                android:textColor="@color/red"
+                android:layout_marginStart="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/btn_login"
+                android:drawableTop="@drawable/ic_go"
+                android:backgroundTint="@color/darkPink"
+                android:layout_gravity="right"
+                android:layout_marginTop="24dp"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                tools:ignore="RtlHardcoded" />
+        </LinearLayout>
+    </FrameLayout>
+</layout>
